@@ -7,6 +7,8 @@ def display_board(board)
 end
 
 def move(board, index, type="X")
-  board[index.to_i-1] = type
+  arr = board
+  arr[index.to_i-1] = type
+  arr
 end
 
