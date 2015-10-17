@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your move method here!
+
+def move(board, position, character="X")
+  position = position.to_i
+  position = position -1 
+  board.delete_at(position)
+  board.insert(position, character)
+  return board
+end
+
