@@ -10,7 +10,7 @@ puts 'VALUE OF BOARD BEFORE MOVE'
 puts board
 
 puts "Where would you like to move?(Cord go from 1 to 9 top left to bottom right)"
-board = move(board, gets.strip)
+move(board, gets.strip)
 
 puts 'VALUE OF BOARD AFTER MOVE'
 puts board
