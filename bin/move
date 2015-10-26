@@ -3,3 +3,11 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+welcome
+#board = Array.new(9) {|a| a=" "}
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+input = ""
+prompt_user
+input = gets.strip
+board = move(board, input)
+display_board(board)
