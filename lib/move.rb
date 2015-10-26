@@ -10,7 +10,6 @@ end
 def move(board, location_str, x_or_o = 'X')
   location = location_str.to_i
   board[location-1] = x_or_o
-  return board
 end
 def welcome
   puts "Welcome to Tic Tac Toe!"  

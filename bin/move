@@ -8,5 +8,5 @@ welcome
 board = [" "," "," "," "," "," "," "," "," "]
 prompt_user
 input = gets.strip
-board = move(board, input)
+move(board, input)
 display_board(board)
