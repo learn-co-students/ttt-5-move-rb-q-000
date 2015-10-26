@@ -7,3 +7,7 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(localBoard, index, choice=(no_argument_passed=true; "X"))
+  localBoard[index.to_i-1]=choice
+  localBoard
+end
