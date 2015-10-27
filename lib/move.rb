@@ -7,3 +7,8 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, movechoice, playertoken = "X")
+  movechoice = movechoice.to_i
+  movechoice = movechoice - 1
+  board [movechoice] = playertoken
+end
