@@ -6,10 +6,11 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
 
 puts "What's your first move?  Choose 1-9, 1 for top-left and 9 for bottom-right."
-  pos = gets.strip.to_i
+  pos = gets.strip
 
-  
+
 move(board, pos)
 
 display_board(board)
 
+ 
