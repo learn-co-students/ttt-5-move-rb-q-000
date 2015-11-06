@@ -1,3 +1,4 @@
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -7,3 +8,6 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, player_position, marker="X")
+  board[player_position.to_i-1] = marker 
+end
