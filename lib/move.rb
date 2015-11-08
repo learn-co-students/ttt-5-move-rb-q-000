@@ -7,33 +7,33 @@ def display_board(board)
 end
 
 def move(board, position, char = "X")
-  if position == 1
+  if position.to_i == 1
     board[0] = char
   end
-  if position == 2
+  if position.to_i == 2
     board[1] = char
   end
-  if position == 3
+  if position.to_i == 3
     board[2] = char
   end
-  if position == 4
+  if position.to_i == 4
     board[3] = char
   end
-  if position == 5
+  if position.to_i == 5
     board[4] = char
   end
-  if position == 6
+  if position.to_i == 6
     board[5] = char
   end
-  if position == 7
+  if position.to_i == 7
     board[6] = char
   end
-  if position == 8
+  if position.to_i == 8
     board[7] = char
   end
-  if position == 9
+  if position.to_i == 9
     board[8] = char
   end
-  end
+end
 
 
