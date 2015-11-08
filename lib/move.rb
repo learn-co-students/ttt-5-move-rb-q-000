@@ -6,4 +6,34 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+def move(board, position, char = "X")
+  if position == 1
+    board[0] = char
+  end
+  if position == 2
+    board[1] = char
+  end
+  if position == 3
+    board[2] = char
+  end
+  if position == 4
+    board[3] = char
+  end
+  if position == 5
+    board[4] = char
+  end
+  if position == 6
+    board[5] = char
+  end
+  if position == 7
+    board[6] = char
+  end
+  if position == 8
+    board[7] = char
+  end
+  if position == 9
+    board[8] = char
+  end
+  end
+
+
