@@ -8,6 +8,6 @@ end
 
 # code your move method here!
 def move(board, location, char="X")
-  location.to_i
-  board[location-1] = char
+  location = location.to_i
+  board[location - 1] = char
 end
