@@ -9,7 +9,5 @@ end
 
 # code your move method here!
 def move (board, input=1, player = "X")
-
   board[input.to_i - 1] = player
-
 end
