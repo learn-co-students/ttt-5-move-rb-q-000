@@ -6,4 +6,10 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def move(board, input, character = "X")
+  input = input.to_i - 1
+  board[input] = character
+  return board
+end
+
 # code your move method here!
