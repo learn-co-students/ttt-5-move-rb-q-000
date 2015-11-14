@@ -8,11 +8,12 @@ def display_board(board=[" "," "," "," "," "," "," "," "," "])
 
 end
 
-display_board([" "," "," "," "," "," "," "," "," "])
 
 def move(board, location, player="X")
+ 
   board[location.to_i-1]=player
   board=Array.new(9,"")
+  puts "Where would you like to go?"
 
 end
 
