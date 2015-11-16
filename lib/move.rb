@@ -6,4 +6,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+def move(board, move_digit, character = "X")
+  move_integer = move_digit.to_i-1
+  board.insert(move_integer, character).pop
+end
