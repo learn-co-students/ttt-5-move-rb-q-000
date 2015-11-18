@@ -1,0 +1,120 @@
+   |   |   
+-----------
+   |   |   
+-----------
+   |   | X 
+
+./lib/move.rb
+  defines a move method
+  #move
+    accepts 3 arguments: the board, the position a player wants to fill and their char, X or O
+   | X |   
+-----------
+   |   |   
+-----------
+   |   |   
+    provides a default value for the 3rd argument
+ X |   |   
+-----------
+   |   |   
+-----------
+   |   |   
+    allows "X" player in the top left position
+   |   |   
+-----------
+   | O |   
+-----------
+   |   |   
+    allows "O" player in the middle
+   |   |   
+-----------
+   |   |   
+-----------
+   |   | X 
+    allows "X" player in the bottom right
+ O |   |   
+-----------
+   |   |   
+-----------
+   |   |   
+ O |   |   
+-----------
+   |   |   
+-----------
+   |   | X 
+    allows "X" player in the bottom right and "O" in the top left
+ X |   |   
+-----------
+   |   |   
+-----------
+   |   |   
+ X |   |   
+-----------
+   | X |   
+-----------
+   |   |   
+ X |   |   
+-----------
+   | X |   
+-----------
+   |   | X 
+    allows "X" to win diagonally
+ X |   |   
+-----------
+   |   |   
+-----------
+   |   |   
+ X | O |   
+-----------
+   |   |   
+-----------
+   |   |   
+ X | O | X 
+-----------
+   |   |   
+-----------
+   |   |   
+ X | O | X 
+-----------
+ O |   |   
+-----------
+   |   |   
+ X | O | X 
+-----------
+ O | X |   
+-----------
+   |   |   
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+   |   |   
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+ X |   |   
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+ X | X |   
+ X | O | X 
+-----------
+ O | X | O 
+-----------
+ X | X | O 
+    allows a tie game
+
+./bin/move executing a CLI Application
+  defines a board variable
+  prints "Welcome to Tic Tac Toe!"
+  asks the user for input
+  calls move passing the user input
+  move modifies the board correctly
+  calls display_board passing the modified board
+  prints the board with a move to the top left
+
+Finished in 0.01758 seconds (files took 0.09422 seconds to load)
+16 examples, 0 failures
+
