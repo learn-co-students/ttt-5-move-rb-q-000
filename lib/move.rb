@@ -18,8 +18,3 @@ def move(board, position, character = "X")
 
 
 
-
-
-
-
-
