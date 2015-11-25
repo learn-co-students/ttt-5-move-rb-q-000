@@ -7,3 +7,10 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board,cell,char="X")
+  pos = cell.to_i
+  pos = pos -1
+  board[pos] = char
+
+  puts board
+end
