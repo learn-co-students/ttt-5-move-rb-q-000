@@ -20,14 +20,14 @@ describe './lib/move.rb' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       move(board, 1, "X")
 
-      expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])      
+      expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
     end
 
     it 'allows "O" player in the middle' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       move(board, 5, "O")
 
-      expect(board).to eq([" ", " ", " ", " ", "O", " ", " ", " ", " "])      
+      expect(board).to eq([" ", " ", " ", " ", "O", " ", " ", " ", " "])
     end
 
     it 'allows "X" player in the bottom right' do
@@ -58,13 +58,13 @@ describe './lib/move.rb' do
       board = Array.new(9, " ")
       move(board, 1, "X")
       move(board, 2, "O")
-      move(board, 3, "X")      
+      move(board, 3, "X")
       move(board, 4, "O")
       move(board, 5, "X")
-      move(board, 6, "O")      
+      move(board, 6, "O")
       move(board, 7, "X")
       move(board, 8, "X")
-      move(board, 9, "O")      
+      move(board, 9, "O")
 
       expect(board).to eq(["X", "O", "X", "O", "X", "O", "X", "X", "O"])
     end
