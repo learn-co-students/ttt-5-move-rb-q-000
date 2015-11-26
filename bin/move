@@ -3,3 +3,10 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go?"
+board=[" "," "," "," "," "," "," "," "," ",]   #establishes blank board array
+input = gets.strip                             #take input from user, strips off excess
+move(board,input,value="X")                    #Calls #move with established values and a default value of X
+display_board(board)
