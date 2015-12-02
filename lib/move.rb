@@ -1,4 +1,4 @@
-board = [" "," "," "," "," "," "," "," "," "]
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -9,8 +9,8 @@ end
 
 # code your move method here!
 
-def move(array, input, value = "X")
-  array[input.to_i - 1] = value
+def move(board, input, value = "X")
+  board[input.to_i - 1] = value
 end
 
 
