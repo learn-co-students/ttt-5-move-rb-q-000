@@ -6,10 +6,8 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-pos = 
 
-def move(board, pos, char = "X")
-
-  board[pos.to_i-1] = char
+def move(board, position, char = "X")
+   board[position.to_i-1] = char
 end
 
