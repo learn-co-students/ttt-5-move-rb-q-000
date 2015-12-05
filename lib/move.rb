@@ -8,7 +8,7 @@ end
 
 # code your move method here!
 def move(board, position, character = "X")
-  position.to_i
+  position = position.to_i
   board[position - 1] = character
   return board
 end
