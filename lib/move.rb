@@ -8,6 +8,7 @@ end
 
 
 
-def move(board, position=gets.to_i, value="X")
-  board[position - 1] = value
-end
+def move(board, location, player = "X")
+  board[location.to_i - 1] = player
+  return board
+end 
