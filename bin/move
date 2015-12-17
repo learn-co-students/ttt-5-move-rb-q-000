@@ -3,3 +3,21 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+puts "Welcome to Tic Tac Toe!"
+
+#used to be here
+
+puts "Where would you like to go?"
+
+position = gets.strip
+#position = position.to_i
+
+#current_player = gets.strip   #These two lines conflict w move.rb
+#current_player.upcase
+
+#move(board, position)
+display_board(board)
+move(board, position)  #changed 0 to 1 and resolved 1 error message-move modified the board correctly
+display_board(board)
