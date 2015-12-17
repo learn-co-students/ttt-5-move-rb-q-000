@@ -3,3 +3,15 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+def update_board_at_with(board, position, value)
+board[position - 1] = value
+end
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to move?"
+position = gets
+
+move(board, position, value = "X")
+
+
+display_board(board)
