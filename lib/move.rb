@@ -5,8 +5,14 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-def move(board, 1, "X")
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  update_array_at_with(
-  array[position] = value
+def move(board, position, charac = "X")
+ board[position.to_i-1] = charac
+  return board
 end
+
+
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+
+
+
