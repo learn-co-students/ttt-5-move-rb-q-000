@@ -1,6 +1,4 @@
 
-
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -14,7 +12,4 @@ board[position.to_i-1]= value
 end
 
 
-#def update_board_at_with(board, position, value)
- # puts board[position]= value
-#end
 
