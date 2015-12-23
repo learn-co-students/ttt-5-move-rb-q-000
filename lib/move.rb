@@ -1,3 +1,6 @@
+
+
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -6,4 +9,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+def move(board, position, value="X")
+board[position.to_i-1]= value
+end
+
+
+#def update_board_at_with(board, position, value)
+ # puts board[position]= value
+#end
+
