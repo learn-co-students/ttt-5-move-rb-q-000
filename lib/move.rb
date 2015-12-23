@@ -5,5 +5,14 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+def move(board, position, charac = "X")
+ board[position.to_i-1] = charac
+  return board
+end
 
-# code your move method here!
+
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+
+
+
