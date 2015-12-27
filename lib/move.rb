@@ -10,8 +10,11 @@ end
 
 
 # code your move method here!
-def move(board, position, value="X")
-  puts " #{board[0] = value}".to_i
+def move(board, position, value = "X")
+
+  puts " #{board = value}".to_i
+
 end
 
+move(display_board(1), 1, "X")
 
