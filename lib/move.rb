@@ -7,3 +7,18 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, pos, char="X")
+  update_array_at_with(board, pos.to_i - 1, char)
+end
+
+def update_array_at_with(board, position, value)
+  board[position]=value
+end
+
+def new_board
+  board = []
+  9.times do
+    board.push(" ")
+  end
+  return board
+end
