@@ -1,3 +1,6 @@
+
+
+# method to display the board
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -6,4 +9,14 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+# method to execute the players move
+def move(board, position, value = "X")
+  
+  board[position.to_i - 1] = value
+
+  return board
+end
+
+
+
+
