@@ -8,7 +8,6 @@ end
 
 # code your move method here!
 def move(board, input, player="X")
-
   index = input.to_i - 1
   board[index] = player
 end
