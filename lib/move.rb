@@ -7,3 +7,9 @@ def display_board(board)
 end
 
 # code your move method here!
+
+def move(arr, loc, letter="X")
+  arr[(loc.to_i)-1] = letter
+end
+
+
