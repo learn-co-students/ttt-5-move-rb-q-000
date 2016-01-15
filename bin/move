@@ -2,4 +2,12 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+puts "Welcome to Tic Tac Toe!"
+puts "Enter either "x" or "o"
+gets.strip
+puts character
+puts "Where would you like to go?"
+puts "Please enter a number 1-9, 1 is top left, 5 is center, 9 is bottom right"
+gets.strip
+puts number
+puts board
