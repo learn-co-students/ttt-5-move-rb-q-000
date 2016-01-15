@@ -6,4 +6,14 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+def move(character)
+  puts"You have selected #{character}."
+end
+
+def move(number)
+  puts "You selected #{number}. Please choose another square."
+end
+
+
+
+
