@@ -8,5 +8,5 @@ end
 
 def move(board, position, character='X')
   num = position.to_i - 1
-  board[num] = character
+  @board[num] = character
 end
