@@ -9,7 +9,4 @@ end
 # code your move method here!
 def move(board, location, character = "X")
   board[(location.to_i - 1)] = character
-  if character = "X"
-    character = "O"
-  end
 end
