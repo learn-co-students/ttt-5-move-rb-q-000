@@ -7,3 +7,6 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, input, side = "X")
+  board[input.to_i-1] = side
+end
