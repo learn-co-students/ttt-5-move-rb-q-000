@@ -16,3 +16,4 @@ input = gets.strip
 move(board, input)
 
  #display_board(move)
+#shovel or push the new move into the modified board array and then display/pass it
