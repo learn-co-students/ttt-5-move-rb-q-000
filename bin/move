@@ -17,5 +17,5 @@ input = gets.strip
 
 move(board, input)
 
- #display_board(move)
+display_board(board)
 #shovel or push the new move into the modified board array and then display/pass it
