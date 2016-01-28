@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/move.rb'
+#require_relative '../lib/move.rb'
 
 
 
@@ -11,6 +11,6 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Where would you like to go?"
 input = gets.strip
-move(input)
+move(board, input, value = "X")
 
-display_board(move)
+#display_board(move)
