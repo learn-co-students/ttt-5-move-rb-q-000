@@ -1,20 +1,21 @@
-def display_board
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  puts " #{board[1]} | #{board[2]} | #{board[3]} "
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+def display_board (board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
-  puts " #{board[4]} | #{board[5]} | #{board[6]} "
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
-  puts " #{board[7]} | #{board[8]} | #{board[9]} "
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 
 
 # code your move method here!
-def move(board, input, value = "X")
-  board[input] = value
-end
-move(display_board, 0, "X")
+def move(array, input, value = "X")
 
+  array[input.to_i] = value
+
+  display_board(array)
+end
 
 
 
