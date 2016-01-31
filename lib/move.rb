@@ -7,3 +7,9 @@ def display_board(board)
 end
 
 # code your move method here!
+
+def move(array,position,player="X")
+  array[position.to_i - 1]=player   
+end
+
+
