@@ -15,4 +15,3 @@ def move(board, position, value = "X")
   update_array_at_with(board, position, value)
   display_board(board)
 end
-display_board(board)
