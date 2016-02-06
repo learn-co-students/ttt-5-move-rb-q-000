@@ -7,3 +7,9 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, position, player_id = "X")
+  grid_position = position.to_i - 1
+  board[grid_position] = player_id
+end
+
+
