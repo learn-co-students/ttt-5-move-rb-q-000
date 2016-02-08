@@ -8,6 +8,7 @@ end
 
 # code your move method here!
 
-def move(board, x )
- puts board[0] = x
+
+def move(board, position, value = "X")
+  board[position.to_i-1] = value
 end
