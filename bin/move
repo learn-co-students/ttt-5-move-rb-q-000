@@ -2,12 +2,15 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 position = gets.strip
 position = .to_i
+
 move(board, 0, "X")
-move(board, 5, "O")
-move(board, 9, "X")
+move(board, 4, "O")
+move(board, 8, "X")
 move(board, 0, "O")
+move(board, 8, "X")
+
