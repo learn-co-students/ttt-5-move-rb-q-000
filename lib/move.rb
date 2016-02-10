@@ -1,5 +1,3 @@
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -9,8 +7,9 @@ def display_board(board)
 end
 
 # code your move method here!
-def move(array, input, value = "X")
-  board[input] = input.to_i - 1
+def move(board, position, current_player = "X")
+  position = position.to_i - 1
+  board[position] = current_player
 end
 
 
