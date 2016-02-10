@@ -8,15 +8,16 @@ puts "Where would you like to go?"
 input = gets.strip
 
 
+
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-move(board, 0, "X")
+move(board, 1, value)
 display_board(board)
-move(board, 4, "O")
+move(board, 5, "O")
 display_board(board)
-move(board, 8, "X")
+move(board, 9, value)
 display_board(board)
-move(board, 0, "O")
+move(board, 1, "O")
 display_board(board)
-move(board, 8, "X")
+move(board, 9, value)
 display_board(board)
 

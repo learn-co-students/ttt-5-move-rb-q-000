@@ -9,8 +9,8 @@ def display_board(board)
 end
 
 # code your move method here!
-def move(array, position, value = "X")
-  array[position] = input - 1
+def move(array, input, value = "X")
+  board[input] = input.to_i - 1
 end
 
 
