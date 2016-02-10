@@ -10,7 +10,7 @@ end
 
 # code your move method here!
 def move(array, position, value = "X")
-  array[position] = value - 1
+  array[position] = input - 1
 end
 
 
