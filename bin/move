@@ -3,11 +3,13 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
-    board = ["", "", ""]
-    def update_array_at_with(array, position, value)
-      array[position] = value
-    end
+ print "Welcome to Tic Tac Toe!"
+ puts "Where would you like to go?"
 
-    update_array_at_with(board, 0, "Red")
-    # The 0 element in board is set to the value "Red"
-    board #=> ["Red", " ", " "]
+
+#2
+       | X |
+    -----------
+       |   |
+    -----------
+       |   |
