@@ -3,10 +3,17 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
-# board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+#define board variable
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go? Enter a number from 1 to 9."
+
+#define position variable
 position = gets.chomp
+
 move(board, position)
 display_board(board)
+
+

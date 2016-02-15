@@ -7,10 +7,7 @@ def display_board(board)
 end
 
 # code your move method here!
-
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
 def move(board, position, player = "X")
-  board[position.to_i] = player
+  board[position.to_i-1] = player
 end
 
