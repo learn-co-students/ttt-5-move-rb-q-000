@@ -9,6 +9,8 @@ end
 # code your move method here!
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 def move(board, position, player = "X")
-  board[position] = player
+  board[position.to_i] = player
 end
+
