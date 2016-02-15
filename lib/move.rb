@@ -9,6 +9,6 @@ end
 # code your move method here!
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-def move(array, position, char)
-  array[position] = char
+def move(board, position, player = "X")
+  board[position] = player
 end

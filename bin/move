@@ -8,5 +8,4 @@ puts "Where would you like to go? Enter a number from 1 to 9."
 
 board = gets.chomp
 
-
 display_board(board)
