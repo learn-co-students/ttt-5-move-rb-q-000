@@ -7,3 +7,9 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(aray1, position1, value1="X" )
+  position1=position1 -1
+    aray1[position1]=value1
+  #puts(aray1[position1])
+   # puts(value1)
+end
