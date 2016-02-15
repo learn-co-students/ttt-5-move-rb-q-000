@@ -10,4 +10,4 @@ input = gets.strip
 
 
 move(board, input)
-puts display_board(board)
+display_board(board)
