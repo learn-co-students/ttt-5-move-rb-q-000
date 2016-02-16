@@ -7,3 +7,8 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(boardArray, arrayCell, xORo = "X")
+  arrayCell = arrayCell.to_i
+  arrayCell = arrayCell - 1
+  boardArray[arrayCell] = xORo
+end
