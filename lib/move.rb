@@ -11,7 +11,3 @@ def move(board,position, value="X")
   board[position.to_i-1] = value
   display_board(board)
 end
-
-def update_array_with_at(array, position, value="X")
-  array[position.to_i] = value
-end
