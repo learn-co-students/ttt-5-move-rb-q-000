@@ -9,7 +9,8 @@ end
 # code your move method here!
 
 def move(board, input, char ="X")
+  input =input.to_i
   board[input-1]= char
-
+  display_board(board)
 end
  
