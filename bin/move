@@ -1,3 +1,4 @@
+
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
@@ -11,6 +12,9 @@ input = gets.strip
 
 
 move(board,input)
+
+
+
 
 # #!/usr/bin/env ruby
 
