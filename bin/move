@@ -9,5 +9,4 @@ puts display_board(board)
 puts "Where would you like to go?"
 input= gets.strip
 move(board,input)
-board
 puts display_board(board)
