@@ -7,3 +7,6 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, cell, x_or_o="X")
+  board[cell.to_i-1] = x_or_o
+end
