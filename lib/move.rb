@@ -7,3 +7,8 @@ def display_board(board)
 end
 
 # code your move method here!
+
+def move(board, location, x_or_o = "X")
+  board[location.to_i-1] = x_or_o
+  board #returns board in complete, otherwise it'll just return X or O
+end
