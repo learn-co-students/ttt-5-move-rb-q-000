@@ -14,3 +14,5 @@ def move(board, option, char="X")
   board[option - 1] = char
   return board
 end
+
+
