@@ -11,8 +11,8 @@ end
 #board = an array
 #position = a string from user input
 #character = an 'X' or 'O'
-def move(board, position = 1, character = 'X')
+def move(board, position=1, token='X')
   #need to convert user entered string into an integer
   #need to account for array index starting at 0
-  board[position.to_i - 1] = character
+  board[position.to_i-1] = token
 end
