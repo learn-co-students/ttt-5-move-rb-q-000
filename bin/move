@@ -2,10 +2,16 @@
 
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+#Greet the user
 puts "Welcome to Tic Tac Toe!"
-board = [" "," "," "," "," "," "," "," "," "]
-puts "Where would you like to go?"
+board = Array.new(9, " ")
+
+#Get input from user
+puts "Choose a position (1-9):"
 input = gets.strip
+
+#use input to place token into array
 move(board, input, 'X')
+
+#display the updated board
 display_board(board)
