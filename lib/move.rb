@@ -9,5 +9,5 @@ end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def move(board, position, value = "X")
-  board[0] = 'X'
+  board[position.to_i - 1] = value
 end
