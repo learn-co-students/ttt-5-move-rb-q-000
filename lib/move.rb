@@ -7,3 +7,7 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(array, location, character="X")
+  array[location.to_i-1]=character
+end
+
