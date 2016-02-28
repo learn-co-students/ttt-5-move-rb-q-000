@@ -7,3 +7,8 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, position, token="X")
+  board[position.to_i - 1] = token
+  return board
+end
+
