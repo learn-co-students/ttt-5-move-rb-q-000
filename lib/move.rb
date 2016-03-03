@@ -7,3 +7,11 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, location, player = "X")
+  player = player.upcase
+  location = location.to_i - 1
+  if(board[location] != '   ')
+     board[location] = player
+  end
+  #display_board(board)
+end
