@@ -8,8 +8,12 @@ end
 
 # code your move method here!
 
-    def move(board, location, player = "X")
-      board[location.to_i-1] = player
+    def move
+      board = ["X", "O", "X"]
+      puts board[0]
+      puts board[1]
     end
+
+
 
 
