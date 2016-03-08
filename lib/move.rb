@@ -1,4 +1,3 @@
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -7,8 +6,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def move(board, position, char='X')
-  puts "Welcome to Tic Tac Toe!"
-  board[position-1]= char
-  display_board(board)
+def move(board, location, current_player = "X")
+  board[location.to_i-1] = current_player
 end
