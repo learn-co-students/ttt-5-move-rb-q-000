@@ -3,3 +3,28 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+# ./bin/move executing a CLI Application
+#   defines a board variable (FAILED - 1)
+#   prints "Welcome to Tic Tac Toe!" (FAILED - 2)
+#   asks the user for input (FAILED - 3)
+#   calls move passing the user input (FAILED - 4)
+#   move modifies the board correctly (FAILED - 5)
+#   calls display_board passing the modified board (FAILED - 6)
+#   prints the board with a move to the top left (FAILED - 7)
+
+board = Array.new(9," ")
+
+puts "Welcome to Tic Tac Toe!"
+position = gets.strip
+
+
+move(board, position, "X")
+display_board(board)
+
+# puts "Player O whats your move?"
+# position = gets.strip
+
+
+# move(board, position, "O")
+# display_board(board)
