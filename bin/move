@@ -6,6 +6,6 @@ require_relative '../lib/move.rb'
 puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Where would you like to go?"
-position = gets
-new_board = move(board, position, "X")
-display_board(new_board)
+position = gets.strip
+move(board, position)
+display_board(board)
