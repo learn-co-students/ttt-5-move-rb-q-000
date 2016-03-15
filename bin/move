@@ -1,5 +1,56 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/move.rb'
 
-# Code your CLI Here
+#board = Array.new(9, " ")
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+
+display_board(board)
+
+puts "Where would you like to go?"
+
+position = gets.strip
+
+player_marker = 'X'
+
+move(board, position, player_marker)
+
+display_board(board)
+
+=begin
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+
+display_board(board)
+
+
+#puts "What is the name of the location ie. board"
+#arr = gets.strip
+puts "Where would you like to go?"
+#location = gets.strip.to_i
+#postition = location - 1
+postition = gets.strip
+#postition = location.to_i
+#puts "Use an X or an O"
+chr = "X"
+
+
+#print "The value for postition is: "
+#print postition
+
+#puts "\n"
+
+#print "chr value chosen was: "
+#print "#{chr}"
+
+#puts "\n"
+
+move(board, postition, chr)
+
+
+display_board(board)
+
+=end
