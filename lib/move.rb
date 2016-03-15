@@ -9,5 +9,4 @@ end
 def move(board, position, player = 'X')
   index = position.to_i - 1
   board[index] = player
-  board
 end
