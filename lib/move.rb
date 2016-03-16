@@ -6,11 +6,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def move(board, location, character = "X")
-  location=(move.to_i)-1
-    def update_array_at_with(array, positon, value)
-      array[position]=value
-    end
-  
+def move(board, input, player = "X")
+  board[(input.to_i)-1]=player
 end
 
