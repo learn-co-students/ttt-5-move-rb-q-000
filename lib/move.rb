@@ -7,3 +7,8 @@ def display_board(board)
 end
 
 # code your move method here!
+ 
+def move(board, position, player_marker = "X")
+  board_slot = position.to_i - 1
+  board[board_slot] = player_marker
+end
