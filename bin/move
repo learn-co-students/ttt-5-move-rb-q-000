@@ -9,5 +9,5 @@ puts "Welcome to Tic Tac Toe!"
 puts "Place your game piece? (1 - 9)"
 position = gets.strip
 
-move(board, position)
+move(board, position) # Don't need a third variable because it defaults I think.
 display_board(board)
