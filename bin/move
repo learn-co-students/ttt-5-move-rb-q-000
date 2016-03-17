@@ -3,9 +3,11 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
-puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-puts "Where would you like to go? (1 - 9)"
+
+puts "Welcome to Tic Tac Toe!"
+puts "Place your game piece? (1 - 9)"
 position = gets.strip
-move(board, position, char="X")
+
+move(board, position)
 display_board(board)
