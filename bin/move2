@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/move.rb'
+#orig_board = display_board(" ")
+#puts orig_board
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+
+#display_board(board)
+
+
+#puts "What is the name of the location ie. board"
+#arr = gets.strip
+puts "Please enter 1-9:"
+#location = gets.strip.to_i
+#postition = location - 1
+postition = gets.strip.to_i
+#postition = location.to_i
+#puts "Use an X or an O"
+#chr = "X"
+
+
+#print "The value for postition is: "
+#print postition
+
+#puts "\n"
+
+#print "chr value chosen was: "
+#print "#{chr}"
+
+#puts "\n"
+
+move(board, postition)
+
+
+display_board(board)
