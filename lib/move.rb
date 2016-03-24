@@ -6,4 +6,9 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def move(array, position, value="X")
+  indx = position.to_i - 1
+  array[indx] = value
+end
+
 # code your move method here!
