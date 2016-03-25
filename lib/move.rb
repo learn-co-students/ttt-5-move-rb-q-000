@@ -8,7 +8,7 @@ end
 
 # code your move method here!
 
-def move(array, position, value = "X")
-    array[position-1] = value
+def move(board, position, value = "X")
+    borad[position-1] = value
 
 end
