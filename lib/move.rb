@@ -12,6 +12,6 @@ def move(array, position, value = "X")
   array[position.to_i - 1] = value
 end
 
-display_board(board)
+
 
 
