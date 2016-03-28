@@ -7,3 +7,11 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, position, marker="X")
+  pos = position - 1
+  if(board[pos] == ' ' && position.between?(1,9))
+    board[pos] = marker
+  else
+    puts "Move not valid, please select and open slot on the board."
+  end
+end
