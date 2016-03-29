@@ -7,3 +7,6 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, location, player="X")
+	board[location - 1] = player
+end
