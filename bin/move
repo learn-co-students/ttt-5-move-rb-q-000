@@ -3,3 +3,11 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]   # another way ==> board = Array.new(9, " ")
+
+puts "Welcome to Tic Tac Toe!"
+puts "Place your game piece? (1 - 9)"
+position = gets.strip
+
+move(board, position) # Don't need a third variable because it defaults I think.
+display_board(board)

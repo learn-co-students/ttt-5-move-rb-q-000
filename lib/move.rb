@@ -7,3 +7,11 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, position, char="X")
+  # if position.to_i == 0
+  #  raise "1-9 please!"
+	board[position.to_i-1]=char
+	# Could also use:
+	# zero_indexed_position = position.to_i-1
+	# board[zero_indexed_position] = char
+end	
