@@ -10,6 +10,6 @@ end
 
 # code your move method here!
 def move(board, position, char="X")
-  board[(position.to_i - 1)] = char
+  board[position.to_i - 1] = char
 end
 #additing a comment so that it will accept my pull request
