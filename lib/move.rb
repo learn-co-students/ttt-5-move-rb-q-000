@@ -7,3 +7,13 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, input, char="X")
+
+  board[input-1] = char
+end
+
+if __FILE__ == $0
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  move(board, 3)
+  display_board(board)
+end
