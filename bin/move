@@ -1,5 +1,25 @@
-#!/usr/bin/env ruby
+  #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+puts "Welcome to Tic Tac Toe!"
+
+
+puts "Please enter your desire move"
+input = gets
+
+#holds the users move 
+board=Array.new(9," ")
+
+#sends input to get formatted
+move(board,input)
+
+#receives formatted info & sends it to the board
+display_board(board)
+
+#TODO:
+#Save the array locally to file 
+#in order to continue the gave @ a later time
+
