@@ -7,3 +7,9 @@ def display_board(board)
 end
 
 # code your move method here!
+#Your `#move` method must take in three arguments, the board array, the location in the board array that the player would like to fill out with an "X" or an "O", and the player's character (either "X" or "O"). The third argument, the player's character, should have a default of "X".
+
+def move(array, position, character = "X")
+  position = position.to_i - 1
+  array[position] = character
+end
