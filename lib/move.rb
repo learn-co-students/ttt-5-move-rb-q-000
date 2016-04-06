@@ -7,3 +7,11 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, location, value="X")
+  puts "value: #{value} class: #{value.class} location: #{location}  class: #{location.class}"
+  if !(value.upcase.include?("X")  || value.upcase.include?("O"))
+    value = "X"
+  end
+  board[location.to_i - 1] = value
+  puts "board: #{board}"
+end

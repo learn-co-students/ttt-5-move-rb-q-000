@@ -60,7 +60,7 @@ describe './bin/move executing a CLI Application' do
     expect(self).to receive(:gets).and_return('1')
 
     output = capture_puts{ run_file("./bin/move") }
-
+    puts "output #{output}"
     expect(output).to include(" X |   |   ")
   end
 end
