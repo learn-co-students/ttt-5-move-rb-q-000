@@ -8,8 +8,7 @@ end
 
 # code your move method here!
 board = ["", "", ""]
-def move(array, position, value)
+def move(array, position, value=2)
   array[position] = value
 end
  
-move(board, 0, "Red")
