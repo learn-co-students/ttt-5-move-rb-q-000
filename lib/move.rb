@@ -7,3 +7,9 @@ def display_board(board)
 end
 
 # code your move method here!
+board = ["", "", ""]
+def move(array, position, value)
+  array[position] = value
+end
+ 
+move(board, 0, "Red")
