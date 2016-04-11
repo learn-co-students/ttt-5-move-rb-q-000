@@ -7,9 +7,6 @@ def display_board(board)
 end
 
 def move(board, input, value = "X")
-
   board[input.to_i-1] = value
-
   return board
-
 end
