@@ -12,4 +12,5 @@ display_board(board)
 
 
 
+turn(board)
 # Code your CLI Here
