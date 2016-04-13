@@ -3,3 +3,13 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts("Welcome to Tic Tac Toe!")
+puts("Where would you like place your first move ? \nEnter a number from 1 to 9.")
+puts("Available spaces are numbered from top left to bottom right.")
+
+input = gets.strip
+
+move(board, input)
+display_board(board)
