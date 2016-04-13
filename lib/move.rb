@@ -1,3 +1,8 @@
+def move(array, input, character="X")
+  position = "#{input}".to_i - 1
+  array[position] = character
+end
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -6,4 +11,3 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
