@@ -10,4 +10,3 @@ def move(board, input, character = "X")
   board[input.to_i - 1] = character
 end
 
-move("board", "9", "X")
