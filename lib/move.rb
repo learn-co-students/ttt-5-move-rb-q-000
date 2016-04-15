@@ -7,3 +7,16 @@ def display_board(board)
 end
 
 # code your move method here!
+
+def update_array_at_with(array, position, value)
+  array[position] = value
+end
+
+
+
+def move(board, input, character = 'X')
+  input = input.to_i  #change passed string to integer; method #to_i is called to do this
+  input = input - 1
+  update_array_at_with(board, input, character)
+
+end
