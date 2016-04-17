@@ -7,7 +7,6 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 space = gets.strip
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 character = "X"
 move(board, space, character)
 display_board(board)
