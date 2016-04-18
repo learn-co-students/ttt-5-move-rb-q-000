@@ -1,4 +1,3 @@
-board_0 = [" "," "," "," "," "," "," "," "," "]
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -9,7 +8,8 @@ end
 
 # code your move method here!
 def move(board, input, symbol = "X")
-  board = [" ", " ", " "]
+  board= ["X"," "," "," "," "," "," "," "," "]
+
 end
 
 #def update_array_at_with(array, position, value)
