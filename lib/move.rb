@@ -8,8 +8,7 @@ end
 
 # code your move method here!
 def move(board, input, symbol = "X")
-  board= ["X"," "," "," "," "," "," "," "," "]
-
+  board = [" ", " ", " ",]
 end
 
 #def update_array_at_with(array, position, value)
