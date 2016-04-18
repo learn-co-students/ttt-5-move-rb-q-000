@@ -1,11 +1,12 @@
 require_relative "../lib/greeting.rb"
 # Code your CLI Here
-
+#!/usr/bin/env ruby
 puts "Welcome to Tic Tac Toe!" 
 board = gets.strip
-plays(board)#!/usr/bin/env ruby
+plays(board)
+
 
 puts "Where would you like to go?" 
-choice = gets.strip
-plays(choice)
+input = gets.strip
+plays(input)
 
