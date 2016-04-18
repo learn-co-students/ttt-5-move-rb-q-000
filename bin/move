@@ -2,10 +2,10 @@ require_relative "../lib/greeting.rb"
 # Code your CLI Here
 #!/usr/bin/env ruby
 puts "Welcome to Tic Tac Toe!" 
-
-board = []
-
 puts "Where would you like to go?" 
+
+board= [" "," "," "," "," "," "," "," "," "]
+
 input = gets.strip
 plays(input)
 
