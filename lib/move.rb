@@ -6,4 +6,18 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+
+def move(board, position, type="X")
+  board[position.to_i-1]=type
+  
+end
+
+
+
+
+#i want to update the array at this position to the value i just specified.  array[postion]=value
+# puts " #{array[position]} | #{array[position]} | #{array[position]} "
+  #puts "-----------"
+  #puts " #{array[position]} | #{array[position]} | #{array[position]} "
+  #puts "-----------"
+  #puts " #{array[position]} | #{array[position]} | #{array[position]} "
