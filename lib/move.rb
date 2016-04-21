@@ -7,3 +7,8 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, position, player = "X")
+  position = gets.chomp.to_i - 1
+  board[position] = player
+  display_board(board)
+end
