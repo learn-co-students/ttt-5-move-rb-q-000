@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your move method here!
+
+
+def move(board, option, char="X")
+  option = option.to_i
+  board[option - 1] = char
+  return board
+end
+
+
