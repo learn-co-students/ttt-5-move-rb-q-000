@@ -7,3 +7,7 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, input, player="X")
+  #subtract one as location on board is one less than location player sees
+  board[input.to_i-1]=player
+end
