@@ -10,5 +10,5 @@ end
 # code your move method here!
 
 def move (board, input, token="X")
-  board[input - 1.to_i] = token
+  board[input.to_i - 1] = token
 end
