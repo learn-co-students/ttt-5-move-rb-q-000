@@ -6,4 +6,13 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+# # code your move method here!
+#       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+#       move(board, 1, "X")
+
+#       expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])  
+
+def move(board, position, token="X")
+  board[position.to_i-1] = token
+end
+
