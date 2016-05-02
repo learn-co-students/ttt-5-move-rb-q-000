@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your move method here!
+def update_array_at_with(array, position, value)
+  array[position] = value
+end
+
+
+def move(board, location, character = "X")
+  board[(location.to_i)-1] = character
+  update_array_at_with(board,(location.to_i)-1,character)
+end
