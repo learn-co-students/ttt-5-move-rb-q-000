@@ -9,5 +9,5 @@ end
 # code your move method here!
 def move(board, input, n = 'X')
     input = input.to_i
-    board[input -1] = n 
+    board[input - 1] = n 
 end
