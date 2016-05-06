@@ -10,7 +10,7 @@ end
 
 # code your move method here!
 
-def move(board, position, player = "X")
+def move(board, position, player)
     position = position - 1
     board[position] = player
 end
