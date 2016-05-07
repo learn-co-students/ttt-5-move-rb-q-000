@@ -3,3 +3,9 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+board = [" "," "," "," "," "," "," "," "," "]
+puts "Welcome, X or O?"
+value = gets.chomp
+puts "what position?"
+position = gets.chomp.to_i - 1
+update_array_at_with(array, position, value)
