@@ -1,3 +1,11 @@
+puts "Welcome, X or O?"
+value = gets.chomp
+
+puts "what position?"
+position = gets.chomp.to_i - 1
+
+
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -7,3 +15,12 @@ def display_board(board)
 end
 
 # code your move method here!
+board = [" "," "," "," "," "," "," "," "," "]
+def update_array_at_with(array, position, value)
+  array[position] = value
+
+end
+
+update_array_at_with(board,position,value)
+puts board
+puts display_board(board)
