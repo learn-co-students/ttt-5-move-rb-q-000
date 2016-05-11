@@ -6,4 +6,9 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your move method here!
+def move(board, index, type="X")
+  arr = board
+  arr[index.to_i-1] = type
+  arr
+end
+
