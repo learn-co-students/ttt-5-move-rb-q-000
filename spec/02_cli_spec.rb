@@ -29,7 +29,7 @@ describe './bin/move executing a CLI Application' do
   end
 
   it 'calls move passing the user input' do
-    
+
     RSpec::Matchers.define :user_input do |x|
       match { |actual| actual == '1' || actual == 1 }
     end
