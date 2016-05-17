@@ -1,5 +1,19 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
+# So this defines the method to puts the greeting to the user
+def greeting(program = "Tic Tac Toe!")
+  puts "Welcome to #{program}"
+end
 
-# Code your CLI Here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+program = "Tic Tac Toe!"
+#here we want to call that method: but program was an undefined variable Sorry Mac  ;) commands
+puts "Welcome to Tic Tac Toe!"
+
+input = gets.strip.to_i
+
+move(board, input)
+
+display_board(board)
