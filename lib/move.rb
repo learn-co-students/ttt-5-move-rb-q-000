@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(str)
+  buffer = str.to_i()
+  index = buffer - 1
+end
+
+def move(array, index, value = "X")
+  #sets the board's spot to -value-
+  array[index] = value
+end
