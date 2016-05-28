@@ -1,0 +1,82 @@
+
+#input_to_index
+  convervets a user_input to an integer
+  subtracts 1 from the user_input
+  returns -1 for strings without integers
+
+./lib/move.rb
+  defines a move method
+  #move
+    accepts 3 arguments: the board, the position a player wants to fill and their char, X or O
+    provides a default value for the 3rd argument
+    allows "X" player in the top left position
+    allows "O" player in the middle
+    allows "X" player in the bottom right
+    allows "X" player in the bottom right and "O" in the top left
+    allows "X" to win diagonally
+    allows a tie game
+
+./bin/move executing a CLI Application
+  defines a board variable (FAILED - 1)
+  prints "Welcome to Tic Tac Toe!"
+  asks the user for input
+  converts the users input to an index
+  calls move passing the index (FAILED - 2)
+  move modifies the board correctly
+  calls display_board passing the modified board
+  prints the board with a move to the top left
+
+Failures:
+
+  1) ./bin/move executing a CLI Application defines a board variable
+     Failure/Error: board = get_variable_from_file("./bin/move", "board")
+     NoMethodError:
+       undefined method `[]' for nil:NilClass
+     # ./lib/move.rb:3:in `display_board'
+     # ./spec/spec_helper.rb:23:in `get_variable_from_file'
+     # ./spec/spec_helper.rb:11:in `eval'
+     # ./spec/spec_helper.rb:11:in `get_variable_from_file'
+     # ./spec/03_cli_spec.rb:9:in `block (2 levels) in <top (required)>'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+
+  2) ./bin/move executing a CLI Application calls move passing the index
+     Failure/Error: run_file("./bin/move")
+     NoMethodError:
+       undefined method `[]' for nil:NilClass
+     # ./lib/move.rb:3:in `display_board'
+     # ./spec/spec_helper.rb:19:in `run_file'
+     # ./spec/spec_helper.rb:6:in `eval'
+     # ./spec/spec_helper.rb:6:in `run_file'
+     # ./spec/03_cli_spec.rb:48:in `block (2 levels) in <top (required)>'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+     # /usr/local/rvm/gems/ruby-2.2.3/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+
+Finished in 0.02107 seconds (files took 0.10216 seconds to load)
+20 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/03_cli_spec.rb:4 # ./bin/move executing a CLI Application defines a board variable
+rspec ./spec/03_cli_spec.rb:41 # ./bin/move executing a CLI Application calls move passing the index
+
