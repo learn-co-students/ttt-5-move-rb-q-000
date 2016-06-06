@@ -7,7 +7,6 @@ def display_board(board)
 end
 
 # code your move method here!
-def move(array,position,value = "X")
-  position = position.to_i - 1
-  array[position] = value
+def move(board, position, token = "X")
+  board[position.to_i - 1] = token
 end
