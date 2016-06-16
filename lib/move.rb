@@ -6,4 +6,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
+def input_to_index(position)
+  index = position.to_i
+  index = index - 1
+  return index
+end
+
+def move(villa, index, value="X")
+  villa[index] = value
+end
