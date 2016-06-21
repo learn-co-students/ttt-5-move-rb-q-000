@@ -12,7 +12,6 @@ puts user_input
 
 index = input_to_index(user_input)
 
-move(board, index, value = "X")
+move(board, index)
 
 display_board(board)
-
