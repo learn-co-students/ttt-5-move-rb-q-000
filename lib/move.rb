@@ -7,11 +7,10 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
-def input_to_index("1"-"9")
-puts "5".to_i
+def input_to_index(num)
+return num.to_i-1
 end
 
-board = ["", "", "X"]
-def move(array, index, value)
-array[5 + 1] = value
+def move(array, index, value="X")
+array[index] = value
 end
