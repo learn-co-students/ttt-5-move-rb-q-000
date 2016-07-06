@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(position)
+  puts "Where would you like to go?"
+  position = position.to_i
+  position - 1
+end
+
+def move(board,position,character="X")                                                                              
+  puts "Would you like to put and X or an O?"
+end
