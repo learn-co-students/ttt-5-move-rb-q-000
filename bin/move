@@ -7,6 +7,6 @@ board = [" "," "," "," "," "," "," "," "," "]
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 input = gets.strip
-# input_to_index(input)
+# input_to_index(input) >> should have made this equal to index var
 move(board, input_to_index(input))
 display_board(board)
