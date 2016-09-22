@@ -12,8 +12,8 @@ describe './lib/move.rb' do
     end
 
     it 'provides a default value for the 3rd argument' do
-      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      expect {move(board, 2)}.to_not raise_error
+      board = [" ", " ", "O", " ", " ", " ", " ", " ", " "]
+      expect {move(board, 2, "O")}.to_not raise_error
     end
 
     it 'allows "X" player in the top left position' do
@@ -32,7 +32,7 @@ describe './lib/move.rb' do
 
     it 'allows "X" player in the bottom right' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 8)
+      move(board, 8, "X")
 
       expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", "X"])
     end
@@ -47,9 +47,9 @@ describe './lib/move.rb' do
 
     it 'allows "X" to win diagonally' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 0)
-      move(board, 4)
-      move(board, 8)
+      move(board, 0, "X")
+      move(board, 4, "X")
+      move(board, 8, "X")
 
       expect(board).to eq(["X", " ", " ", " ", "X", " ", " ", " ", "X"])
     end
@@ -64,7 +64,7 @@ describe './lib/move.rb' do
       move(board, 5, "O")
       move(board, 6, "X")
       move(board, 7, "X")
-      move(board, 8, "O")      
+      move(board, 8, "O")
 
       expect(board).to eq(["X", "O", "X", "O", "X", "O", "X", "X", "O"])
     end
