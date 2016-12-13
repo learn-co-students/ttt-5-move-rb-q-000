@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+require_relative '../lib/move.rb'
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+def board(board)
+
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+
+  puts "-----------"
+
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+
+  puts "-----------"
+
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
+
+end
+
+puts "Welcome to Programming!"
+
+board(board)
+
+puts "Where would you like to go?(1-9)"
+
+user_input = gets.strip
+
+def progress(board, user_input, avatar = ""~"")
+
+
+      board[user_input.to_i - 1] = avatar
+
+      board(board)
+
+
+      end
+  end
