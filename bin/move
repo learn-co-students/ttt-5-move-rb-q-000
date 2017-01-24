@@ -12,6 +12,4 @@ value = "X"
 move(board, index, value)
 display_board(board)
 
-#index = input_to_index(user_input)
-#new_board = move(board, index, "X")
-#display_board(new_board)
+
