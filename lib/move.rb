@@ -1,3 +1,12 @@
+board = [" "," "," "," "," "," "," "," "," "]
+def move(array, position, value = "X")
+  array[position.to_i - 1] = value
+end
+
+move(board, 0, "Red")
+
+board
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
