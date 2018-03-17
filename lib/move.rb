@@ -7,3 +7,14 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(input)
+  input.to_i - 1
+end
+
+input_to_index(1)
+
+
+# input_to_index: define 1-9, how? position = 1-9, array = 0-8 so position - 1?
+def move(board, index, token = "X")
+  board[index] = token
+end
