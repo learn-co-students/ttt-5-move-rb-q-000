@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(position)
+  index = position.to_i - 1
+  index
+end
+
+def move(board_array, index, team = "X")
+  board_array[index] = "#{team}"
+  display_board(board_array)
+end
