@@ -3,3 +3,20 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+puts "Welcome to Tic Tac Toe!"
+
+#initilize board to default state: empty board
+board = Array.new(9, " ")
+
+#get user input for which spot to place in
+puts "Where would you like to go?"
+input = gets.strip
+
+#convert user's demanded spot to board index: [0-8]
+index = input_to_index(input)
+
+#set internal board state based on user's spot info
+move(board, index) #called with default parameter -value- = "X"
+
+#draw current board
+display_board(board)
