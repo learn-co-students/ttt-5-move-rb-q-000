@@ -67,7 +67,7 @@ Our program will:
 
 1. Print out a welcome message.
 2. Ask the user to input the position on the board they would like to fill.
-3. Convert the input to an array index.
+3. Convert the  to an array index.
 4. Fill out that position with either an "X" or an "O".
 5. Print the updated board.
 
